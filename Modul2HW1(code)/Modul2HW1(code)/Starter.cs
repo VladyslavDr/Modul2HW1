@@ -26,10 +26,10 @@ public class Starter
 
             if (result.Status == false)
             {
-                Logger.GetLogger().Write(LogType.Error, "Action failed by a reason:");
+                Logger.GetLogger.Write(LogType.Error, "Action failed by a reason:");
             }
         }
 
-        Logger.GetLogger().WriteAllLogToFile();
+        Logger.GetLogger.WriteAllLogToFile();
     }
 }

@@ -2,23 +2,23 @@
 
 public class Actions
 {
-    private static Logger _x = Logger.GetLogger();
+    private static Logger _logerObj = Logger.GetLogger;
 
     public static Result Method1()
     {
-        _x.Write(LogType.Info, "Start method:");
+        _logerObj.Write(LogType.Info, "Start method:");
         return new Result(true);
     }
 
     public static Result Method2()
     {
-        _x.Write(LogType.Warning, "Skipped logic in method:");
+        _logerObj.Write(LogType.Warning, "Skipped logic in method:");
         return new Result(true);
     }
 
     public static Result Method3()
     {
-        _x.Write(LogType.Error, "I broke a logic: ");
+        _logerObj.Write(LogType.Error, "I broke a logic: ");
         return new Result(true, "что-то не так");
     }
 }
